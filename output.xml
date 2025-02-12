@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.4 on win32)" generated="2025-02-12T15:09:37.701874" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Automationexercise" source="c:\Users\acer\Desktop\Lab test\test_automationexercise.robot">
+<test id="s1-t1" name="Fill Address And Create Account" line="57">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-12T15:09:37.987104" level="INFO">Opening browser 'Chrome' to base url 'http://automationexercise.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-12T15:09:37.987104" elapsed="4.389544"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-12T15:09:42.378250" elapsed="0.034055"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-12T15:09:42.412305" level="INFO">Clicking element 'xpath=//a[contains(text(),'Signup / Login')]'.</msg>
+<arg>xpath=//a[contains(text(),'Signup / Login')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T15:09:42.412305" elapsed="0.419997"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-12T15:09:42.833300" level="INFO">Typing text 'TestUser' into text field 'xpath=//input[@data-qa='signup-name']'.</msg>
+<arg>xpath=//input[@data-qa='signup-name']</arg>
+<arg>${NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T15:09:42.833300" elapsed="0.139698"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-12T15:09:42.972998" level="INFO">Typing text 'mangpong.ar@gmail.com.com' into text field 'xpath=//input[@data-qa='signup-email']'.</msg>
+<arg>xpath=//input[@data-qa='signup-email']</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T15:09:42.972998" elapsed="0.205479"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-02-12T15:09:43.179753" level="INFO">Clicking button 'xpath=//button[@data-qa='signup-button']'.</msg>
+<arg>xpath=//button[@data-qa='signup-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-12T15:09:43.178477" elapsed="0.410481"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-12T15:09:43.760057" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-43.png"&gt;&lt;img src="selenium-screenshot-43.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-12T15:09:43.760057" level="FAIL">Page should have contained element 'xpath=//b[contains(text(), 'Enter Account Information')]' but did not.</msg>
+<arg>xpath=//b[contains(text(), 'Enter Account Information')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-12T15:09:43.589802" elapsed="0.178245">Page should have contained element 'xpath=//b[contains(text(), 'Enter Account Information')]' but did not.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//label[@for='id_gender1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.768047" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.770083" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>id=days</arg>
+<arg>${BIRTH_DAY}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.770083" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>xpath=//select[@id='months']</arg>
+<arg>March</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.770083" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>id=years</arg>
+<arg>${BIRTH_YEAR}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.770083" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='first_name']</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.770083" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='last_name']</arg>
+<arg>Doe</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.770083" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='company']</arg>
+<arg>Test Company</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.774004" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='address1']</arg>
+<arg>123 Test Street</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.774004" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='address2']</arg>
+<arg>Apt 456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.774004" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>xpath=//select[@id='country']</arg>
+<arg>Canada</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.774004" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='state']</arg>
+<arg>Yukon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.774004" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='city']</arg>
+<arg>Whitehorse</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.774004" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='zipcode']</arg>
+<arg>${ZIPCODE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.774004" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='mobile_number']</arg>
+<arg>${MOBILE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.778167" elapsed="0.000000"/>
+</kw>
+<kw name="Mouse Down" owner="SeleniumLibrary">
+<arg>down 5</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.778883" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[@data-qa='create-account-button']</arg>
+<arg>3600s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.778883" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath=//button[@data-qa='create-account-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.780435" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ACCOUNT CREATED!</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.780435" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.780435" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-02-12T15:09:43.780435" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-12T15:09:37.979056" elapsed="5.801379">Page should have contained element 'xpath=//b[contains(text(), 'Enter Account Information')]' but did not.</status>
+</test>
+<status status="FAIL" start="2025-02-12T15:09:37.706496" elapsed="6.073939"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Automationexercise" id="s1" pass="0" fail="1" skip="0">Test Automationexercise</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
